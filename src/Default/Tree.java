@@ -92,11 +92,19 @@ class Tree {
 	}
 
 	public void levelOrder() {
-		/* implement */
-		
+		Queue<TNode> qu = new LinkedList<TNode>();
+		TNode temp = root;
+		while(temp != null)
+		{
+			System.out.print(temp.value + " ");
+			qu.addAll(temp.children);
+			temp = qu.poll();
+		}
+		System.out.println();
 	}
 
 	public boolean isSubTree(Tree st) {
-		/* implement for extra credit */ return false;
+		/* implement for extra credit */ 	
+		return false;
 	}
 }
