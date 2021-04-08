@@ -5,4 +5,4 @@ In this project I learned how to create a Tree LinkList with unlimited children 
 	- [x] Heap and Stacks
 	- [x] Tree Link List
 	- [x] Find the height of a none binery Tree Link List
-	- [ ] Print the level order data of each node
+	- [x] Print the level order data of each node
