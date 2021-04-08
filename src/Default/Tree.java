@@ -22,6 +22,7 @@ class Tree {
 			children = new ArrayList<TNode>();
 		}
 	}
+
 	private TNode root;
 	private int size;
 
@@ -78,8 +79,12 @@ class Tree {
 	}
 
 	public int height(TNode n) {
-		/* implement */
-		return 0;
+		int max = -1;
+		for (int i = 0; i < n.children.size(); i++) {
+			int height = height(n.children.get(i));
+			max = Math.max(max, height);
+		}
+		return max + 1;
 	}
 
 	public int height() {
@@ -88,6 +93,7 @@ class Tree {
 
 	public void levelOrder() {
 		/* implement */
+		
 	}
 
 	public boolean isSubTree(Tree st) {
